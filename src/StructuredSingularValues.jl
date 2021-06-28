@@ -5,6 +5,6 @@ using LinearAlgebra
 include("lowerbounds.jl")
 include("upperbounds.jl")
 
-export qss1
+export lowerbound
 
 end
