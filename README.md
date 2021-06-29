@@ -8,7 +8,19 @@
 An (experimental) Julia package for computing the *Structured Singular Value (SSV, also μ)* of a (in general) complex matrix. In fact, just *lower and upper bounds* are computed as the computation of the exact value is known to be NP hard.
 
 ## What is *Structured Singular Value* of a matrix?
-..
+In order to explain what *structured singular value* is, we need to recall what classical [singular value](https://en.wikipedia.org/wiki/Singular_value) of a matrix is. In particular, we focus on the largest singular value ̄σ(M), which plays the role of an operator norm for the matrix M.
+
+Furthermore, we need to be able to specify a *structure* of a matrix. Loosely speaking, we just specify which elements in the matrix are zero and which a free to assume real or complex values. For some matrix Δ, we say that if it has the given structure, it belong to some set 𝚫, that is, Δ∈𝚫.
+
+With the concept of a singular value and some way to characterize a structure of a matrix, we can define the (largest) structured singular value of a matrix M in the following way
+
+```math
+\mu_\Delta(M) = \frac{1}{\min \{\bar{\sigma}(\Delta): Δ\in\boldsymbol\Delta, \mathrm{det}(I-M\Delta)=0\}}
+```
+
+There is a useful alternative "definition" of the largest singular value of a matrix M. We assume that there is another matrix Δ whose largest singular value is, say, γ. The largest singular value
+
+
 
 ## Usage of the `StructuredSingularValues.jl` package
 ...
