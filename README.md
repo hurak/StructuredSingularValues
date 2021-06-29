@@ -14,12 +14,9 @@ Furthermore, we need to be able to specify a *structure* of a matrix. Loosely sp
 
 With the concept of a singular value and some way to characterize a structure of a matrix, we can define the (largest) structured singular value of a matrix M in the following way
 
-```math
-\mu_\Delta(M) = \frac{1}{\min \{\bar{\sigma}(\Delta): Δ\in\boldsymbol\Delta, \mathrm{det}(I-M\Delta)=0\}}
-```
+\mu(M) = 1/(min {̄σ(Δ): Δ∈𝚫, det(I-MΔ)=0}).
 
-There is a useful alternative "definition" of the largest singular value of a matrix M. We assume that there is another matrix Δ whose largest singular value is, say, γ. The largest singular value
-
+Clearly, if the matrix Δ has no structure, the structured singular value μ of the matrix M is equal to the the reciprocal value of the largest singular value ̄σ(Δ) of some smallest (in the sense of ̄σ) matrix Δ that makes the determinant of I-MΔ vanish.
 
 
 ## Usage of the `StructuredSingularValues.jl` package
