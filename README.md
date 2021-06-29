@@ -16,7 +16,7 @@ With the concept of a singular value and some way to characterize a structure of
 
 μ(M) = 1/(min {̄σ(Δ): Δ∈𝚫, det(I-MΔ)=0}).
 
-Clearly, if the matrix Δ has no structure, the structured singular value μ of the matrix M is equal to the the reciprocal value of the largest singular value ̄σ(Δ) of some smallest (in the sense of ̄σ) matrix Δ that makes the determinant of I-MΔ vanish.
+Clearly, if the matrix Δ has no structure, the structured singular value μ of the matrix M is equal to the the reciprocal value of the largest singular value ̄σ(Δ) of some smallest (in the sense of ̄σ) matrix Δ that makes the determinant of I-MΔ vanish. But this is exactly equal to the standard (largest) singular value ̄σ(M). That is, in this unstructured case μ(M)=̄σ(M). In presence of some structure imposed on Δ, μ(M)≦σ(M). 
 
 
 ## Usage of the `StructuredSingularValues.jl` package
