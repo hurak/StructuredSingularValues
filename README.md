@@ -14,7 +14,7 @@ Furthermore, we need to be able to specify a *structure* of a matrix. Loosely sp
 
 With the concept of a singular value and some way to characterize a structure of a matrix, we can define the (largest) structured singular value of a matrix M in the following way
 
-\mu(M) = 1/(min {̄σ(Δ): Δ∈𝚫, det(I-MΔ)=0}).
+μ(M) = 1/(min {̄σ(Δ): Δ∈𝚫, det(I-MΔ)=0}).
 
 Clearly, if the matrix Δ has no structure, the structured singular value μ of the matrix M is equal to the the reciprocal value of the largest singular value ̄σ(Δ) of some smallest (in the sense of ̄σ) matrix Δ that makes the determinant of I-MΔ vanish.
 
