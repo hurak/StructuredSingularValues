@@ -2,9 +2,10 @@ module StructuredSingularValues
 
 using LinearAlgebra
 
+include("common.jl")
 include("lowerbounds.jl")
 include("upperbounds.jl")
 
-export lowerbound
+export lowerboundSSV
 
 end
